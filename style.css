@@ -6,7 +6,7 @@
     --red-color: red;
     --black-color: black;
     --white-color: white;
-    --yellow-color: yellow;
+    --yellow-color: orange;
     --green-color: green;
     --blue-color: blue;
     --purple-color: purple;
@@ -29,7 +29,7 @@ img {
 }
 
 a {
-    text-decoration: none;
+    text-decoration: solid;
 }
 
 /* GLOBAL */
@@ -60,4 +60,26 @@ section .home-title {
 .navbar .nav-item .nav-link:hover,
 .navbar .nav-item .nav-link.active {
     color: var(--yellow-color);
+}
+
+/* HOME */
+.home .home-title {
+    font-size: var(--h1-font-size);
+}
+
+.home .home-skill {
+    color: var(--black-color);
+    text-decoration: none;
+}
+
+.home .home-skill {
+    color: var(--yellow-color);
+}
+
+.home .home-skill span {
+    transition: 0.5s;
+}
+
+.home .home-skill:hover span {
+    transform: rotate(45deg);
 }
