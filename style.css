@@ -1,0 +1,63 @@
+/* FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+/* VARIABLE */
+:root {
+    --red-color: red;
+    --black-color: black;
+    --white-color: white;
+    --yellow-color: yellow;
+    --green-color: green;
+    --blue-color: blue;
+    --purple-color: purple;
+
+    --h1-font-size: 40px;
+    --h2-font-size: 32px;
+    --small-font-size: 14px;
+}
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* GLOBAL */
+section {
+    padding: 70px 0;
+}
+
+section .home-title {
+    font-size: var(--h2-font-size);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.btn-yellow {
+    background-color: var(--yellow-color);
+}
+
+.text-yellow {
+    color: var(--yellow-color);
+}
+
+.form-control :focus {
+    box-shadow: none;
+    border-color: var(--yellow-color);
+}
+
+/* NAVBAR */
+.navbar .nav-item .nav-link:hover,
+.navbar .nav-item .nav-link.active {
+    color: var(--yellow-color);
+}
